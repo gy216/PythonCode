@@ -22,7 +22,7 @@ else:
 
 time.sleep(5)
 # 目标URL
-target_url = "https://guoyuangzs.dpdns.org"
+target_url = "https://www.yzzxjyjt.com/yzsr/index.html"
 # 发送请求的函数
 def send_request():
     while True:
