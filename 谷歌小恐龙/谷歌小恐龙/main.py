@@ -4,31 +4,34 @@ import os
 import random
 pygame.init()
 
+# 获取脚本所在目录
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+
 # 全局常量
 SCREEN_HEIGHT = 600
 SCREEN_WIDTH = 1100
 SCREEN = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 
 # 加载游戏中使用的图像资源
-RUNNING = [pygame.image.load(os.path.join("Assets/Dino", "DinoRun1.png")),
-           pygame.image.load(os.path.join("Assets/Dino", "DinoRun2.png"))]
-JUMPING = pygame.image.load(os.path.join("Assets/Dino", "DinoJump.png"))
-DUCKING = [pygame.image.load(os.path.join("Assets/Dino", "DinoDuck1.png")),
-           pygame.image.load(os.path.join("Assets/Dino", "DinoDuck2.png"))]
+RUNNING = [pygame.image.load(os.path.join(SCRIPT_DIR, "Assets", "Dino", "DinoRun1.png")),
+           pygame.image.load(os.path.join(SCRIPT_DIR, "Assets", "Dino", "DinoRun2.png"))]
+JUMPING = pygame.image.load(os.path.join(SCRIPT_DIR, "Assets", "Dino", "DinoJump.png"))
+DUCKING = [pygame.image.load(os.path.join(SCRIPT_DIR, "Assets", "Dino", "DinoDuck1.png")),
+           pygame.image.load(os.path.join(SCRIPT_DIR, "Assets", "Dino", "DinoDuck2.png"))]
 
-SMALL_CACTUS = [pygame.image.load(os.path.join("Assets/Cactus", "SmallCactus1.png")),
-                pygame.image.load(os.path.join("Assets/Cactus", "SmallCactus2.png")),
-                pygame.image.load(os.path.join("Assets/Cactus", "SmallCactus3.png"))]
-LARGE_CACTUS = [pygame.image.load(os.path.join("Assets/Cactus", "LargeCactus1.png")),
-                pygame.image.load(os.path.join("Assets/Cactus", "LargeCactus2.png")),
-                pygame.image.load(os.path.join("Assets/Cactus", "LargeCactus3.png"))]
+SMALL_CACTUS = [pygame.image.load(os.path.join(SCRIPT_DIR, "Assets", "Cactus", "SmallCactus1.png")),
+                pygame.image.load(os.path.join(SCRIPT_DIR, "Assets", "Cactus", "SmallCactus2.png")),
+                pygame.image.load(os.path.join(SCRIPT_DIR, "Assets", "Cactus", "SmallCactus3.png"))]
+LARGE_CACTUS = [pygame.image.load(os.path.join(SCRIPT_DIR, "Assets", "Cactus", "LargeCactus1.png")),
+                pygame.image.load(os.path.join(SCRIPT_DIR, "Assets", "Cactus", "LargeCactus2.png")),
+                pygame.image.load(os.path.join(SCRIPT_DIR, "Assets", "Cactus", "LargeCactus3.png"))]
 
-BIRD = [pygame.image.load(os.path.join("Assets/Bird", "Bird1.png")),
-        pygame.image.load(os.path.join("Assets/Bird", "Bird2.png"))]
+BIRD = [pygame.image.load(os.path.join(SCRIPT_DIR, "Assets", "Bird", "Bird1.png")),
+        pygame.image.load(os.path.join(SCRIPT_DIR, "Assets", "Bird", "Bird2.png"))]
 
-CLOUD = pygame.image.load(os.path.join("Assets/Other", "Cloud.png"))
+CLOUD = pygame.image.load(os.path.join(SCRIPT_DIR, "Assets", "Other", "Cloud.png"))
 
-BG = pygame.image.load(os.path.join("Assets/Other", "Track.png"))
+BG = pygame.image.load(os.path.join(SCRIPT_DIR, "Assets", "Other", "Track.png"))
 
 # 定义小恐龙类
 class Dinosaur:

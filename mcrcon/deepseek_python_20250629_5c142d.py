@@ -35,7 +35,7 @@ def interactive_rcon_session(host, port, password):
 if __name__ == "__main__":
     # 配置信息
     HOST = "play.simpfun.cn"
-    PORT = 25575  # 如果使用Docker映射端口，请修改为实际映射端口
+    PORT = 36585  # 如果使用Docker映射端口，请修改为实际映射端口
     PASSWORD = "zzx20110216"
     
     # 先测试连接

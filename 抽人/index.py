@@ -8,6 +8,10 @@ from collections import Counter
 root = tk.Tk()
 root.title("随机数生成器")
 
+
+print("Hello from the 果园编程. https://gy216.github.io")
+print("TK已经加载")
+
 # 标签
 start_label = tk.Label(root, text="起始数字:")
 max_label = tk.Label(root, text="最大数字:")

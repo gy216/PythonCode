@@ -7,7 +7,7 @@ try:
     import requests as awa
     print('你的Python请求库的安装位置',awa)
     print('——————————————————————————————————————————————————————————————')
-    site = 'https://user.qzone.qq.com/3392507966'
+    site = 'https://user.qzone.qq.com/386498317'
     frequency = int(input('你要刷的次数:'))
     print('请等待！（请求：库、网络）')
     time.sleep(2)
