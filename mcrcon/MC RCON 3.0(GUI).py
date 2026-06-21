@@ -63,19 +63,19 @@ class RCONClientGUI:
         ttk.Label(connection_frame, text="服务器地址:").grid(row=0, column=0, sticky=tk.W, padx=(0, 5))
         self.host_entry = ttk.Entry(connection_frame, width=20)
         self.host_entry.grid(row=0, column=1, sticky=(tk.W, tk.E), padx=(0, 10))
-        self.host_entry.insert(0, "127.0.0.1")
+        self.host_entry.insert(0, "play.simpfun.cn")
         
         # 端口
-        ttk.Label(connection_frame, text="端口:").grid(row=0, column=2, sticky=tk.W, padx=(0, 5))
+        ttk.Label(connection_frame, text="RCON端口:").grid(row=0, column=2, sticky=tk.W, padx=(0, 5))
         self.port_entry = ttk.Entry(connection_frame, width=10)
         self.port_entry.grid(row=0, column=3, sticky=tk.W, padx=(0, 10))
-        self.port_entry.insert(0, "36585")
+        self.port_entry.insert(0, "27891")
         
         # 密码
         ttk.Label(connection_frame, text="RCON密码:").grid(row=1, column=0, sticky=tk.W, padx=(0, 5), pady=(5, 0))
         self.password_entry = ttk.Entry(connection_frame, width=20, show="*")
         self.password_entry.grid(row=1, column=1, sticky=(tk.W, tk.E), padx=(0, 10), pady=(5, 0))
-        self.password_entry.insert(0, "zzx20110216")
+        self.password_entry.insert(0, "cwAxUwncoYWTupyzbiu1mROWnbYeYAqP")
         
         # 显示密码复选框
         self.show_password_var = tk.BooleanVar()
